@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const path = require("path");
 const { findNotes,
     writeNotes,
     deleteNote,
@@ -36,7 +37,7 @@ router.get("/api/notes", (req, res) => {
   
   //receives request and sends note page to client side; also calls for previous notes to be loaded
   router.get("/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
+    res.sendFile(path.join(__dirname, "../../public/notes.html"));
   });
 
 module.exports  = router;
