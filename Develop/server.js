@@ -17,6 +17,7 @@ app.use(express.static("public"));
 //   return JSON.parse(notes);
 // }
 
+
 // //stringify the saved parsed notes 
 // function writeNotes(notes) {
 //   fs.writeFileSync("db/db.json", JSON.stringify(notes));
